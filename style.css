@@ -1,0 +1,94 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 150px;
+    font-family: 'Andika';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Andika';
+}
+
+#bg {
+    background-image: url(https://source.unsplash.com/featured/?women);
+    background-repeat: no-repeat;
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#banner_content {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    position: absolute;
+    margin-top: 50px;
+    background-color: #141414;
+    min-height: 150px;
+    padding-top: 40px;
+    width: 100%;
+    bottom: 0;
+}
+
+.container a {
+    color: black;
+}
+
+.container a:hover {
+    color: grey;
+}
+
+#size {
+    max-height: 200px;
+}
+
+/* CSS for navbar */
+.navbar {
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
