@@ -1,9 +1,9 @@
 
 
-<!--Navigation bar start-->
+<!-- Navigation bar start -->
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: rgba(0, 0, 0, 0.5)">
     <div class="container">
-        <a href="index.php" class="navbar-brand mx-auto" style="font-family: 'Delius Swash Caps';">Hooked</a>
+        <a href="index.php" class="navbar-brand mx-auto" style="font-family: 'Delius Swash Caps';">HOOKED</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,21 +22,30 @@
                 </li>
                 <li class="nav-item"><a href="index.php" class="nav-link">Offers</a></li>
                 <li class="nav-item"><a href="about.php" class="nav-link">About Us</a></li>
+                <li class="nav-item">
+                    <?php if (isset($_SESSION['email'])) { ?>
+                        <a href="cart.php" class="nav-link">Cart</a>
+                    <?php } ?>
+                </li>
                 <?php if (isset($_SESSION['email'])) { ?>
-                    <li class="nav-item"><a href="cart.php" class="nav-link">Cart</a></li>
-                <?php } ?>
-                <?php if (isset($_SESSION['email'])) { ?>
-                    <li class="nav-item"><a href="logout_script.php" class="nav-link"><i class="fa fa-sign-out"></i> Logout</a></li>
-                    <li class="nav-item"><a class="nav-link" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['email'] ?>"><i class="fa fa-user-circle"></i></a></li>
+                    <li class="nav-item">
+                        <a href="logout_script.php" class="nav-link"><i class="fa fa-sign-out"></i> Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['email'] ?>"><i class="fa fa-user-circle"></i></a>
+                    </li>
                 <?php } else { ?>
-                    <li class="nav-item"><a href="#signup" class="nav-link" data-toggle="modal"><i class="fa fa-user"></i> Sign Up</a></li>
-                    <li class="nav-item"><a href="#login" class="nav-link" data-toggle="modal"><i class="fa fa-sign-in"></i> Login</a></li>
+                    <li class="nav-item">
+                        <a href="#signup" class="nav-link" data-toggle="modal"><i class="fa fa-user"></i> Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" class="nav-link" data-toggle="modal"><i class="fa fa-sign-in"></i> Login</a>
+                    </li>
                 <?php } ?>
             </ul>
         </div>
     </div>
 </nav>
-<!--navigation bar end-->
 <!--Login trigger Modal-->
 <div class="modal fade" id="login">
     <div class="modal-dialog modal-dialog-centered" role="document">
