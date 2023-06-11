@@ -3,7 +3,9 @@
 <!-- Navigation bar start -->
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: rgba(0, 0, 0, 0.5)">
     <div class="container">
-        <a href="index.php" class="navbar-brand mx-auto" style="font-family: 'Delius Swash Caps';">HOOKED</a>
+        <div class="d-flex align-items-center">
+            <a href="index.php" class="navbar-brand mx-auto" style="font-family: 'Delius Swash Caps';">HOOKED</a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,6 +48,7 @@
         </div>
     </div>
 </nav>
+<!-- Navigation bar end -->
 <!--Login trigger Modal-->
 <div class="modal fade" id="login">
     <div class="modal-dialog modal-dialog-centered" role="document">

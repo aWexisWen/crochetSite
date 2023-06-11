@@ -7,13 +7,21 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Planet Shopify | Online Shopping Site for Men</title>
+    <title>Hooked | Online Shopping Site for Crochet</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href='https://fonts.googleapis.com/css?family=Delius Swash Caps' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+body {
+  background-image: url(https://kaboompics.com/cache/c/3/e/f/b/c3efbe124cec51a3aa55963a4f32b7ce8f2a31c7.jpeg);
+}
+.product-image {
+        height: 200px;
+    }
+</style>
 <body>
 <!--header -->
  <?php
@@ -21,11 +29,12 @@ include 'includes/header_menu.php';
 include 'includes/check-if-added.php';
 ?>
 <!--header ends -->
+
 <div class="container" style="margin-top:65px">
          <!--jumbutron start-->
         <div class="jumbotron text-center">
-            <h1>Welcome to Planet Shopify!</h1>
-            <p>We have wide range of products for you.No need to hunt around,we have all in one place</p>
+            <h1>Welcome to Hooked</h1>
+            <p>We have a wide range of products for your needs of crochet from bags to toys. There are also crochet materials if you want to do it yourself</p>
         </div>
         <!--jumbutron ends-->
         <!--breadcrumb start-->
@@ -41,10 +50,10 @@ include 'includes/check-if-added.php';
     <div class="row text-center" id="watch">
         <div class="col-md-3 col-6 py-2">
             <div class="card">
-                <img src="images/watch1.jpg" alt="" class="img-fluid pb-1" >
+                <img src="https://i0.wp.com/mirrymascrafts.com/wp-content/uploads/2022/06/IMG-20220624-WA0016.jpg?fit=1280%2C719&ssl=1" alt="" class="img-fluid pb-1 product-image">
                 <div class="figure-caption">
-                    <h6>Guess 1875</h6>
-                    <h6>Price :Rs 3000</h6>
+                    <h6>Bag</h6>
+                    <h6>Price :RM 150</h6>
                     <?php if (!isset($_SESSION['email'])) {?>
                     <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                     <?php
@@ -63,10 +72,10 @@ include 'includes/check-if-added.php';
         </div>
         <div class="col-md-3 col-6 py-2">
             <div class="card">
-                <img src="images/watch2.jpg" alt="" class="img-fluid pb-1">
+                <img src="https://jeaninegabrielle.files.wordpress.com/2021/06/il_794xn.3061715833_iqsq.jpg?w=794" alt="" class="img-fluid pb-1 product-image">
                 <div class="figure-caption">
-                    <h6>Guest Watch</h6>
-                    <h6>Price :Rs 2500</h6>
+                    <h6>Toy Bunny</h6>
+                    <h6>Price :RM 100</h6>
                     <?php if (!isset($_SESSION['email'])) {?>
                     <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                     <?php
@@ -85,10 +94,10 @@ include 'includes/check-if-added.php';
         </div>
         <div class="col-md-3 col-6 py-2">
             <div class="card">
-                <img src="images/watch3.jpg" alt="" class="img-fluid pb-1">
+                <img src="https://jewelsandjones.com/wp-content/uploads/2020/07/Lotus-Stitch-Laptop-Case-Jewels-and-Jones.jpg" alt="" class="img-fluid pb-1 product-image">
                 <div class="figure-caption">
-                    <h6>Panerai Watch</h6>
-                    <h6>Price :Rs 3500</h6>
+                    <h6>Laptop Sleeve</h6>
+                    <h6>Price :RM 130</h6>
                     <?php if (!isset($_SESSION['email'])) {?>
                     <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                     <?php
@@ -107,10 +116,10 @@ include 'includes/check-if-added.php';
         </div>
         <div class="col-md-3 col-6 py-2">
             <div class="card">
-                <img src="images/watch4.jpg" alt="" class="img-fluid pb-1">
+                <img src="https://doradoes.co.uk/wp-content/uploads/2021/09/any-time-crochet-cardigan-pattern-tutorial-13.jpg" alt="" class="img-fluid pb-1 product-image">
                 <div class="figure-caption">
-                    <h6>Nonos Watch</h6>
-                    <h6>Price :Rs 1800</h6>
+                    <h6>Cardigan</h6>
+                    <h6>Price :RM 200</h6>
                     <?php if (!isset($_SESSION['email'])) {?>
                     <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                     <?php
@@ -127,6 +136,50 @@ include 'includes/check-if-added.php';
                 </div>
             </div>
         </div>
+        <div class="col-md-3 col-6 py-3" >
+                <div class="card">
+                    <img src="https://cdn-0.knottednest.com/wp-content/uploads/2020/12/IMG_3537-1160x1004.jpg" alt="" class="img-fluid pb-1 product-image">
+                    <div class="figure-caption">
+                    <h6>Scarf</h6>
+                    <h6>Price :RM 90</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                        if (check_if_added_to_cart(5)) {
+                        echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                        } else {
+                        ?>
+                        <p><a href="cart-add.php?id=5" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                        <?php
+                        }
+                    }
+                    ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 py-3" >
+                <div class="card">
+                    <img src="images/shirt1.jpg" alt="" class="img-fluid pb-1"  >
+                    <div class="figure-caption">
+                    <h6>Levis</h6>
+                    <h6>Price :Rs 1800</h6>
+                    <?php if (!isset($_SESSION['email'])) {?>
+                    <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
+                    <?php
+                    } else {
+                        if (check_if_added_to_cart(5)) {
+                        echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
+                        } else {
+                        ?>
+                        <p><a href="cart-add.php?id=5" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                        <?php
+                        }
+                    }
+                    ?>
+                    </div>
+                </div>
+            </div>
     </div>
     <div class="row text-center" id="shirt">
             <div class="col-md-3 col-6 py-3" >

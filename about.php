@@ -18,6 +18,11 @@ session_start();
   <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+body {
+  background-image: url(https://kaboompics.com/cache/c/3/e/f/b/c3efbe124cec51a3aa55963a4f32b7ce8f2a31c7.jpeg);
+}
+</style>
 <body style="overflow-x:hidden; padding-bottom:100px;">
   <?php
         include 'includes/header_menu.php';
@@ -26,38 +31,32 @@ session_start();
     <div class="container mt-5 ">
       <div class="row justify-content-around">
         <div class="col-md-5 mt-3">
-          <h3 class="text-warning pt-3 title">Who Are We ?</h3>
+          <h3 class="" style="color: brown;">Who Are We ?</h3>
           <hr />
           <img
-            src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&h=400&q=80"
+            src="images/Logo.png"
             class="img-fluid d-block rounded mx-auto image-thumbnail">
-          <p class="mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed atque, consequuntur cumque odit
-            sapiente blanditiis, expedita ipsam molestiae voluptates reprehenderit ea modi eaque rerum dicta dolores,
-            iusto ullam aliquid non?
-            Quidem quae odio nemo cumque consectetur natus doloremque voluptatem consequatur voluptate laboriosam, amet
-            maiores excepturi sunt aliquid magni voluptatibus aperiam laudantium dolores reiciendis? Laborum laboriosam,
-            nam ullam totam amet et.
-            Earum recusandae voluptate accusantium, placeat alias consequuntur aspernatur sed explicabo impedit et aut
-            assumenda hic repellendus esse facere ratione quod vitae laudantium. Obcaecati nobis sequi esse assumenda,
-            rerum dolores pariatur.</p>
+          <p class="mt-2" style="text-align: justify;">Hooked is a passionate platform for crochet enthusiasts. We connect makers of handmade crochet goods with those who appreciate their art.
+            Our marketplace offers a diverse collection of exquisite products, from cozy scarves to adorable baby items, all crafted with love and attention to detail.
+            But we go beyond just products. Our learning center provides courses and tutorials for beginners and experienced crocheters alike.
+            Learn essential stitches, explore advanced techniques, and unleash your creativity with our step-by-step guidance and expert instructors.
+            We pride ourselves on delivering an exceptional user experience. Our website is intuitive and user-friendly, making it easy to browse, shop, and learn.
+            Our dedicated customer service team is always ready to assist you.
+            Join our vibrant community of crochet enthusiasts at Hooked. Discover the magic of crochet, connect with like-minded individuals, and indulge in the beauty of handmade creations.</p>
         </div>
         <div class="col-md-5 mt-3">
-          <span class="text-warning pt-3">
-            <h1 class="title">LIVE SUPPORT</h1>
-            <h3>24 hours|7 days a week| 365 days a year Live Technical Support</h3>
+          <span class=""style="color: brown;">
+            <h1 class="title"style="color: brown;">LIVE SUPPORT</h1>
+            <h3 style="color: brown;">24 hours|7 days a week| 365 days a year Live Technical Support</h3>
           </span>
           <hr>
-          <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters. There are many variations of passages of Lorel Ipsum available, but the majority have suffered
-            alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
-            hidden in the middle of text.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nam ducimus a illum, at voluptate, iusto
-            eos tempora in quam exercitationem officia autem maxime deserunt. Reprehenderit necessitatibus sequi in
-            fugit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, facilis. Reiciendis dicta fuga esse
-            at excepturi inventore perferendis? Consequatur dicta blanditiis, magnam consequuntur possimus excepturi
-            eaque neque nulla libero temporibus!
+          <p style="text-align: justify;">We understand the importance of providing timely assistance to our valued customers.
+            That's why we offer round-the-clock live technical support, 365 days a year.
+            Our dedicated team of experts is always available to address any queries or concerns you may have.
+            At our website, we prioritize customer satisfaction and aim to provide a seamless experience.
+            Whether you need help with placing an order, navigating our platform, or have any other inquiries, our friendly support staff is just a click away.
+            Rest assured, we are committed to ensuring your satisfaction and making your journey with us as smooth as possible.
+            Experience the convenience of our 24/7 live customer support and let us assist you every step of the way.
           </p>
 
         </div>

@@ -62,7 +62,7 @@ h6 {
     max-height: 200px;
 }
 
-/* CSS for navbar
+CSS for navbar
 .navbar {
     transition: background-color 0.3s ease;
     display: flex;
@@ -91,9 +91,9 @@ h6 {
   
   .navbar-nav.ml-auto .nav-item:last-child {
     margin-right: 0;
-  }*/
+  }
 
-  /* CSS for navbar */
+  /* CSS for navbar 
   .navbar {
     position: relative;
     display: flex;
@@ -120,4 +120,4 @@ h6 {
 
 .navbar-nav .nav-item:last-child {
     margin-left: auto;
-}
+}*/
