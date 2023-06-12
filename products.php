@@ -50,7 +50,7 @@ session_start();
         <!--breadcrumb end-->
         <hr />
         <!--menu list-->
-        <div class="row text-center" id="watch">
+        <div class="row text-center" id="crochetgoods">
             <div class="col-md-3 col-6 py-2">
                 <div class="card">
                     <img src="https://i0.wp.com/mirrymascrafts.com/wp-content/uploads/2022/06/IMG-20220624-WA0016.jpg?fit=1280%2C719&ssl=1" alt="" class="img-fluid pb-1 product-image">
@@ -229,13 +229,13 @@ session_start();
                 </div>
             </div>
         </div>
-        <div class="row text-center" id="shirt">
+        <div class="row text-center" id="crochetitems">
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
                     <img src="https://www.korbond.co.uk/prodimg/dk-yarn.jpg" alt="" class="img-fluid pb-1 product-image">
                     <div class="figure-caption">
                         <h6>Yarn</h6>
-                        <h6>Price :Rs 1800</h6>
+                        <h6>Price :RM 3</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
@@ -257,7 +257,7 @@ session_start();
                     <img src="https://www.jimmybeanswool.com/secure-html/productExtraImages/60000/64717Large_5e37.jpg" alt="" class="img-fluid pb-1 product-image">
                     <div class="figure-caption">
                         <h6>Crochet Hook</h6>
-                        <h6>Price :Rs 2500</h6>
+                        <h6>Price :RM 5</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
@@ -279,7 +279,7 @@ session_start();
                     <img src="https://irepo.primecp.com/2019/05/410904/How-to-Use-Stitch-Markers-safety-pins-horizontal_Large600_ID-3210740.png?v=3210740" alt="" class="img-fluid pb-1 product-image">
                     <div class="figure-caption">
                         <h6>Stitch Markers</h6>
-                        <h6>Price :Rs 500</h6>
+                        <h6>Price :RM 3</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
@@ -301,7 +301,7 @@ session_start();
                     <img src="https://i5.walmartimages.com/asr/2047c283-c165-4c3a-989c-624f490423d3.1a85c3d4db4a5949aa1b74d285c49565.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff" alt="" class="img-fluid pb-1 product-image">
                     <div class="figure-caption">
                         <h6>Measuring Tape</h6>
-                        <h6>Price :Rs 2300</h6>
+                        <h6>Price :RM 7</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
@@ -319,13 +319,13 @@ session_start();
                 </div>
             </div>
         </div>
-        <div class="row text-center" id="shoes">
+        <div class="row text-center" id="classes">
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="https://www.knitfreedom.com/wp-content/uploads/2021/11/Slip-Stitch-GIF-111521.gif" alt="" class="img-fluid pb-1 product-image">
+                    <img src="https://4.bp.blogspot.com/-mCLcnYkbT0c/WQBwQ_7BwPI/AAAAAAAAGCM/w3CNhvITzbgPGo0WTGhmy8hdkqLg1XIlwCEw/s640/14.gif" alt="" class="img-fluid pb-1 product-image">
                     <div class="figure-caption">
                         <h6>Novice Classes</h6>
-                        <h6>Price :Rs 8000</h6>
+                        <h6>Price :RM 50</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
@@ -347,7 +347,7 @@ session_start();
                     <img src="https://ml70gvfswpfq.i.optimole.com/w:194/h:194/q:mauto/f:avif/https://i0.wp.com/media.giphy.com/media/LkOFq30fWyyxYAX5It/giphy.gif" alt="" class="img-fluid pb-1 product-image">
                     <div class="figure-caption">
                         <h6>Experienced Classes</h6>
-                        <h6>Price :Rs 7500</h6>
+                        <h6>Price :RM 70</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
@@ -366,10 +366,10 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shoe3.jpg" alt="" class="img-fluid pb-1">
+                    <img src="https://www.knitfreedom.com/wp-content/uploads/2021/11/Single-Crochet-GIF-111321.gif" alt="" class="img-fluid pb-1 product-image">
                     <div class="figure-caption">
                         <h6>Casual Classes</h6>
-                        <h6>Price :Rs 7000</h6>
+                        <h6>Price :RM 70</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
@@ -388,10 +388,10 @@ session_start();
             </div>
             <div class="col-md-3 col-6 py-3">
                 <div class="card">
-                    <img src="images/shoe4.jpg" alt="" class="img-fluid pb-1">
+                    <img src="https://media.tenor.com/TtZ8pZ5bQFEAAAAC/maymayentrata-knitting.gif" alt="" class="img-fluid pb-1 product-image">
                     <div class="figure-caption">
                         <h6>Enthusiastic Community Members</h6>
-                        <h6>Price :Rs 6000</h6>
+                        <h6>Price :RM 30</h6>
                         <?php if (!isset($_SESSION['email'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
@@ -401,96 +401,6 @@ session_start();
                             } else {
                             ?>
                                 </p><a href="cart-add.php?id=12" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
-                        <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center" id="headphones">
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/sp1.jpg" alt="" class="img-fluid pb-1">
-                    <div class="figure-caption">
-                        <h6>Beats Headphone</h6>
-                        <h6>Price :Rs 22,500</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
-                            <?php
-                        } else {
-                            if (check_if_added_to_cart(13)) {
-                                echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
-                            } else {
-                            ?>
-                                <p> <a href="cart-add.php?id=13" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
-                        <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/sp2.jpg" alt="" class="img-fluid pb-1">
-                    <div class="figure-caption">
-                        <h6>Zolo Headphone</h6>
-                        <h6>Price :Rs 4500</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
-                            <?php
-                        } else {
-                            if (check_if_added_to_cart(14)) {
-                                echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
-                            } else {
-                            ?>
-                                </p><a href="cart-add.php?id=14" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
-                        <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/sp3.jpg" alt="" class="img-fluid pb-1">
-                    <div class="figure-caption">
-                        <h6>Sony Speaker</h6>
-                        <h6>Price :Rs 10,500</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
-                            <?php
-                        } else {
-                            if (check_if_added_to_cart(15)) {
-                                echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
-                            } else {
-                            ?>
-                                </p><a href="cart-add.php?id=15" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
-                        <?php
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6 py-3">
-                <div class="card">
-                    <img src="images/sp4.jpg" alt="" class="img-fluid pb-1">
-                    <div class="figure-caption">
-                        <h6>Airpods</h6>
-                        <h6>Price :Rs 15,000</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
-                            <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
-                            <?php
-                        } else {
-                            if (check_if_added_to_cart(16)) {
-                                echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
-                            } else {
-                            ?>
-                                <p> <a href="cart-add.php?id=16" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
                         <?php
                             }
                         }

@@ -40,11 +40,10 @@ session_start();
         Crochets
     </div>
     <!--menu highlights start-->
-    <div class="container pt-3">
+    <div class="container pt-3" style="align-content: center;">
         <div class="row text-center ">
             <div class="col-6 col-md-3 py-3">
                 <a href="products.php#watch"> <img src="https://lh4.googleusercontent.com/tGb35PI4Li9vTFZ2hR6rsDFVDLO62s_jKpge6afADfzLzE5ELikuKbGuCYWcVB3TWglS33ybN0CqqFR9UP2nCu-vbWUL34bN2363iVIvzKkyjvYcwXBKyK791ec1KaToXjH6ZbahpXCR1brKlQ" class="img-fluid " alt="" style="border-radius:0.5rem">
-                    <!-- https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fm=jpg&w=400&fit=max-->
                     <div class="h5 pt-3 font-weight-bolder">
                         Crochet Goods
                     </div>
@@ -66,17 +65,8 @@ session_start();
                     </div>
                 </a>
             </div>
-            <div class="col-6 col-md-3 py-3">
-                <a href="products.php#headphones">
-                    <img src="images/headphones.jpg" class="img-fluid  " alt="" style="border-radius:0.5rem">
-                    <div class="h5 pt-3 font-weight-bolder">
-                        Headphones
-                    </div>
-            </div>
-            </a>
         </div>
     </div>
-
     <!--menu highlights end-->
     <!--footer -->
     <?php include 'includes/footer.php' ?>

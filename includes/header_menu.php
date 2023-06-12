@@ -16,25 +16,24 @@
                         Products
                     </a>
                     <div class="dropdown-menu" style="text-align: left;">
-                        <a href="products.php#watch" class="dropdown-item">Crochet Goods</a>
-                        <a href="products.php#shirt" class="dropdown-item">Crochet Items</a>
-                        <a href="products.php#shoes" class="dropdown-item">Crocheting Classes</a>
-                        <a href="products.php#headphones" class="dropdown-item">Headphones/Speakers</a>
+                        <a href="products.php#crochetgoods" class="dropdown-item">Crochet Goods</a>
+                        <a href="products.php#crochetitems" class="dropdown-item">Crochet Items</a>
+                        <a href="products.php#classes" class="dropdown-item">Crocheting Classes</a>
                     </div>
                 </li>
                 <li class="nav-item"><a href="index.php" class="nav-link">Offers</a></li>
                 <li class="nav-item"><a href="about.php" class="nav-link">About Us</a></li>
                 <li class="nav-item">
-                    <?php if (isset($_SESSION['email'])) { ?>
+                    <?php if (isset($_SESSION['username'])) { ?>
                         <a href="cart.php" class="nav-link">Cart</a>
                     <?php } ?>
                 </li>
-                <?php if (isset($_SESSION['email'])) { ?>
+                <?php if (isset($_SESSION['username'])) { ?>
                     <li class="nav-item">
                         <a href="logout_script.php" class="nav-link"><i class="fa fa-sign-out"></i> Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['email'] ?>"><i class="fa fa-user-circle"></i></a>
+                        <a class="nav-link" href="profile.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
                     </li>
                 <?php } else { ?>
                     <li class="nav-item">
@@ -62,8 +61,8 @@
             <div class="modal-body">
                 <form action="login_script.php" method="post">
                     <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" name="lemail" placeholder="Enter email" required>
+                        <label for="username">Username:</label>
+                        <input type="username" class="form-control" name="lusername" placeholder="Enter username" required>
                     </div>
                     <div class="form-group">
                         <label for="pwd">Password:</label>
@@ -98,8 +97,8 @@
             <div class="modal-body">
                 <form action="signup_script.php" method="post">
                     <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" name="eMail" placeholder="Enter email" required>
+                        <label for="username">Username:</label>
+                        <input type="username" class="form-control" name="username" placeholder="Enter username" required>
                         <?php if(isset($_GET['error'])){ echo "<span class='text-danger'>".$_GET['error']."</span>" ;}  ?>
                     </div>
                     <div class="form-group">
