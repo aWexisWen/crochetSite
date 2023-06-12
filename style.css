@@ -92,7 +92,10 @@ CSS for navbar
   .navbar-nav.ml-auto .nav-item:last-child {
     margin-right: 0;
   }
-
+  
+  .forum-title {
+    margin-top: 50px; /* Adjust the value as needed */
+}
   /* CSS for navbar 
   .navbar {
     position: relative;
