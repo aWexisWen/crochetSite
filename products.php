@@ -57,7 +57,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Bag</h6>
                         <h6>Price :RM 150</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -80,7 +80,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Toy Bunny</h6>
                         <h6>Price :RM 100</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -102,7 +102,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Laptop Sleeve</h6>
                         <h6>Price :RM 130</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -124,7 +124,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Cardigan</h6>
                         <h6>Price :RM 200</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -146,7 +146,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Scarf</h6>
                         <h6>Price :RM 90</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -168,7 +168,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Flowers</h6>
                         <h6>Price :RM 150</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -190,7 +190,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Balaclava</h6>
                         <h6>Price :RM 150</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -212,7 +212,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Blanket</h6>
                         <h6>Price :RM 150</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -236,7 +236,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Yarn</h6>
                         <h6>Price :RM 3</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -258,7 +258,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Crochet Hook</h6>
                         <h6>Price :RM 5</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -280,7 +280,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Stitch Markers</h6>
                         <h6>Price :RM 3</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -302,7 +302,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Measuring Tape</h6>
                         <h6>Price :RM 7</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -326,7 +326,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Novice Classes</h6>
                         <h6>Price :RM 50</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -348,7 +348,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Experienced Classes</h6>
                         <h6>Price :RM 70</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -370,7 +370,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Casual Classes</h6>
                         <h6>Price :RM 70</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {
@@ -392,7 +392,7 @@ session_start();
                     <div class="figure-caption">
                         <h6>Enthusiastic Community Members</h6>
                         <h6>Price :RM 30</h6>
-                        <?php if (!isset($_SESSION['email'])) { ?>
+                        <?php if (!isset($_SESSION['username'])) { ?>
                             <p><a href="index.php#login" role="button" class="btn btn-warning  text-white ">Add To Cart</a></p>
                             <?php
                         } else {

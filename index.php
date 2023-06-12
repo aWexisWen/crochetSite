@@ -15,7 +15,13 @@ session_start();
     <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    body {
+        background-image: url(https://kaboompics.com/cache/c/3/e/f/b/c3efbe124cec51a3aa55963a4f32b7ce8f2a31c7.jpeg);
+    }
 
+
+</style>
 <body style="margin-bottom:200px">
     <!--Header-->
     <?php

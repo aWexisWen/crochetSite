@@ -33,7 +33,7 @@
                         <a href="logout_script.php" class="nav-link"><i class="fa fa-sign-out"></i> Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="profile.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
+                        <a class="nav-link" href="dashboard.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
                     </li>
                 <?php } else { ?>
                     <li class="nav-item">
