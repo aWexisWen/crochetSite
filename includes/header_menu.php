@@ -21,8 +21,12 @@
                         <a href="products.php#classes" class="dropdown-item">Crocheting Classes</a>
                     </div>
                 </li>
-                <li class="nav-item"><a href="forum.php" class="nav-link">Forum</a></li>
                 <li class="nav-item"><a href="about.php" class="nav-link">About Us</a></li>
+                <li class="nav-item">
+                    <?php if (isset($_SESSION['username'])) { ?>
+                        <a href="forum.php" class="nav-link">Forum</a>
+                    <?php } ?>
+                </li>
                 <li class="nav-item">
                     <?php if (isset($_SESSION['username'])) { ?>
                         <a href="cart.php" class="nav-link">Cart</a>
