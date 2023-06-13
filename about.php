@@ -38,13 +38,11 @@ session_start();
           <h3 class="" style="color: brown;">Who Are We ?</h3>
           <hr />
           <img src="images/Logo.png" class="img-fluid d-block rounded mx-auto image-thumbnail">
-          <p class="mt-2" style="text-align: justify;">Hooked is a passionate platform for crochet enthusiasts. We connect makers of handmade crochet goods with those who appreciate their art.
-            Our marketplace offers a diverse collection of exquisite products, from cozy scarves to adorable baby items, all crafted with love and attention to detail.
-            But we go beyond just products. Our learning center provides courses and tutorials for beginners and experienced crocheters alike.
-            Learn essential stitches, explore advanced techniques, and unleash your creativity with our step-by-step guidance and expert instructors.
-            We pride ourselves on delivering an exceptional user experience. Our website is intuitive and user-friendly, making it easy to browse, shop, and learn.
-            Our dedicated customer service team is always ready to assist you.
-            Join our vibrant community of crochet enthusiasts at Hooked. Discover the magic of crochet, connect with like-minded individuals, and indulge in the beauty of handmade creations.</p>
+          <p class="mt-2" style="text-align: justify;">Hooked is a passionate platform connecting crochet enthusiasts and makers of handmade goods.
+          Our marketplace offers a diverse collection of exquisite products, crafted with love and attention to detail.
+          Additionally, our learning center provides courses and tutorials for all skill levels, allowing you to learn essential stitches, explore advanced techniques, and unleash your creativity.
+          With an exceptional user experience, our intuitive website makes browsing, shopping, and learning a breeze.
+          Join our vibrant community at Hooked to discover the magic of crochet, connect with like-minded individuals, and indulge in the beauty of handmade creations.</p>
         </div>
         <div class="col-md-5 mt-3">
           <span class="" style="color: brown;">
