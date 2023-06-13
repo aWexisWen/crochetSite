@@ -38,11 +38,17 @@ session_start();
           <h3 class="" style="color: brown;">Who Are We ?</h3>
           <hr />
           <img src="images/Logo.png" class="img-fluid d-block rounded mx-auto image-thumbnail">
-          <p class="mt-2" style="text-align: justify;">Hooked is a passionate platform connecting crochet enthusiasts and makers of handmade goods.
-          Our marketplace offers a diverse collection of exquisite products, crafted with love and attention to detail.
-          Additionally, our learning center provides courses and tutorials for all skill levels, allowing you to learn essential stitches, explore advanced techniques, and unleash your creativity.
-          With an exceptional user experience, our intuitive website makes browsing, shopping, and learning a breeze.
-          Join our vibrant community at Hooked to discover the magic of crochet, connect with like-minded individuals, and indulge in the beauty of handmade creations.</p>
+          <p class="mt-2" style="text-align: justify;">Hooked is a platform that connects crochet enthusiasts and makers of handmade goods, offering a diverse collection of exquisite products and providing courses and tutorials for all skill levels.</p>
+          <h3>Marketplace offerings:</h3>
+          <ul style="text-align: justify;">
+            <li>Diverse collection of handmade crochet goods</li>
+            <li>Exquisite products crafted with love and attention to detail</li>
+            <li>Courses and tutorials for all skill levels</li>
+            <li>Learning center for learning essential stitches and exploring advanced techniques</li>
+            <li>Exceptional user experience on an intuitive website</li>
+            <li>Vibrant community of like-minded individuals</li>
+            <li>Opportunity to discover the magic of crochet and indulge in the beauty of handmade creations.</li>
+          </ul>
         </div>
         <div class="col-md-5 mt-3">
           <span class="" style="color: brown;">
@@ -63,9 +69,7 @@ session_start();
       </div>
     </div>
   </div>
-  <div class="container pb-3">
-  </div>
-  <div class="container mt-3 d-flex justify-content-center card pb-3 col-md-6">
+  <div class="container mt-3 d-flex justify-content-center card pb-3 col-md-5">
 
     <form class="col-md-12" action="https://formspree.io/EnterYourEmail" method="POST" name="_next">
       <h3 class="text-warning pt-3 title mx-auto">Contact Form</h3>
