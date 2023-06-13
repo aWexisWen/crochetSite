@@ -56,11 +56,11 @@ $result = mysqli_query($con, $query) or die(mysqli_error($con));
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-body {
-    background-image: url(https://kaboompics.com/cache/c/3/e/f/b/c3efbe124cec51a3aa55963a4f32b7ce8f2a31c7.jpeg);
-}
-
+    body {
+        background: linear-gradient(45deg, #bdc3c7, #2c3e50);
+    }
 </style>
+
 <body>
     <!-- Header -->
     <?php include 'includes/header_menu.php'; ?>
@@ -70,31 +70,31 @@ body {
         <div class="container" style="padding-top:150px">
             <div class="mx-auto p-5 text-white" id="banner_content" style="border-radius: 0.5rem;">
                 <h1 class="forum-title">Public Forum</h1>
-                    <?php if (isset($error)) { ?>
-                        <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
-                    <?php } ?>
-                    <div class="post-form">
-                        <form method="POST" action="">
-                            <div class="form-group">
-                                <label for="post_content">Write Content Here:</label>
-                                <textarea class="form-control" id="post_content" name="post_content" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Post</button>
-                        </form>
-                    </div>
-                    <hr>
-                    <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-                        <div class="post">
-                            <div class="post-header">
-                                <strong><?php echo $row['username']; ?></strong>
-                                <span class="post-date"><?php echo $row['created_at']; ?></span>
-                            </div>
-                            <div class="post-content"><?php echo $row['post_content']; ?></div>
+                <?php if (isset($error)) { ?>
+                    <div class="alert alert-danger" role="alert"><?php echo $error; ?></div>
+                <?php } ?>
+                <div class="post-form">
+                    <form method="POST" action="">
+                        <div class="form-group">
+                            <label for="post_content">Write Content Here:</label>
+                            <textarea class="form-control" id="post_content" name="post_content" rows="5" required></textarea>
                         </div>
-                    <?php } ?>
+                        <button type="submit" class="btn btn-primary">Post</button>
+                    </form>
                 </div>
+                <hr>
+                <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+                    <div class="post">
+                        <div class="post-header">
+                            <strong><?php echo $row['username']; ?></strong>
+                            <span class="post-date"><?php echo $row['created_at']; ?></span>
+                        </div>
+                        <div class="post-content"><?php echo $row['post_content']; ?></div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
+    </div>
 
 
     <?php include 'includes/footer.php'; ?>

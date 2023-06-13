@@ -1,5 +1,5 @@
 <?php
-require ("includes/common.php");
+require("includes/common.php");
 session_start();
 ?>
 <!DOCTYPE html>
@@ -19,23 +19,22 @@ session_start();
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
-body {
-  background-image: url(https://kaboompics.com/cache/c/3/e/f/b/c3efbe124cec51a3aa55963a4f32b7ce8f2a31c7.jpeg);
-}
+  body {
+    background: linear-gradient(45deg, #bdc3c7, #2c3e50);
+  }
 </style>
+
 <body style="overflow-x:hidden; padding-bottom:100px;">
   <?php
-        include 'includes/header_menu.php';
-    ?>
+  include 'includes/header_menu.php';
+  ?>
   <div>
     <div class="container mt-5 ">
       <div class="row justify-content-around">
         <div class="col-md-5 mt-3">
           <h3 class="" style="color: brown;">Who Are We ?</h3>
           <hr />
-          <img
-            src="images/Logo.png"
-            class="img-fluid d-block rounded mx-auto image-thumbnail">
+          <img src="images/Logo.png" class="img-fluid d-block rounded mx-auto image-thumbnail">
           <p class="mt-2" style="text-align: justify;">Hooked is a passionate platform for crochet enthusiasts. We connect makers of handmade crochet goods with those who appreciate their art.
             Our marketplace offers a diverse collection of exquisite products, from cozy scarves to adorable baby items, all crafted with love and attention to detail.
             But we go beyond just products. Our learning center provides courses and tutorials for beginners and experienced crocheters alike.
@@ -45,8 +44,8 @@ body {
             Join our vibrant community of crochet enthusiasts at Hooked. Discover the magic of crochet, connect with like-minded individuals, and indulge in the beauty of handmade creations.</p>
         </div>
         <div class="col-md-5 mt-3">
-          <span class=""style="color: brown;">
-            <h1 class="title"style="color: brown;">LIVE SUPPORT</h1>
+          <span class="" style="color: brown;">
+            <h1 class="title" style="color: brown;">LIVE SUPPORT</h1>
             <h3 style="color: brown;">24 hours|7 days a week| 365 days a year Live Technical Support</h3>
           </span>
           <hr>
@@ -70,9 +69,8 @@ body {
     <form class="col-md-12" action="https://formspree.io/EnterYourEmail" method="POST" name="_next">
       <h3 class="text-warning pt-3 title mx-auto">Contact Form</h3>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email"
-          name="email">
+        <label for="exampleFormControlInput1">Username</label>
+        <input type="username" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Username" name="username">
       </div>
 
       <div class="form-group">
@@ -87,7 +85,7 @@ body {
 
   </div>
   <!--footer -->
-  <?php include 'includes/footer.php'?>
+  <?php include 'includes/footer.php' ?>
   <!--footer end-->
 
 
@@ -96,10 +94,10 @@ body {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script>
-  $(document).ready(function () {
+  $(document).ready(function() {
     $('[data-toggle="popover"]').popover();
   });
-  $(document).ready(function () {
+  $(document).ready(function() {
 
     if (window.location.href.indexOf('#login') != -1) {
       $('#login').modal('show');
@@ -107,16 +105,25 @@ body {
 
   });
 </script>
-<?php if(isset($_GET['error'])){ $z=$_GET['error']; echo "<script type='text/javascript'>
+<?php if (isset($_GET['error'])) {
+  $z = $_GET['error'];
+  echo "<script type='text/javascript'>
 $(document).ready(function(){
 $('#signup').modal('show');
 });
-</script>"; echo "
-<script type='text/javascript'>alert('".$z."')</script>";} ?>
-<?php if(isset($_GET['errorl'])){ $z=$_GET['errorl']; echo "<script type='text/javascript'>
+</script>";
+  echo "
+<script type='text/javascript'>alert('" . $z . "')</script>";
+} ?>
+<?php if (isset($_GET['errorl'])) {
+  $z = $_GET['errorl'];
+  echo "<script type='text/javascript'>
 $(document).ready(function(){
 $('#login').modal('show');
 });
-</script>"; echo "
-<script type='text/javascript'>alert('".$z."')</script>";} ?>
+</script>";
+  echo "
+<script type='text/javascript'>alert('" . $z . "')</script>";
+} ?>
+
 </html>

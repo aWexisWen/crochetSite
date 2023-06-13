@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-image: url(https://kaboompics.com/cache/c/3/e/f/b/c3efbe124cec51a3aa55963a4f32b7ce8f2a31c7.jpeg);
+            background: linear-gradient(45deg, #bdc3c7, #2c3e50);
         }
 
         .product-image {
@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!--Profile Edit Form-->
     <div id="content">
-        <div id="bg" class="">
+        <div id="" class="">
             <div class="container" style="padding-top:150px">
                 <div class="mx-auto p-5 text-white" id="banner_content" style="border-radius: 0.5rem;">
                     <h1>Edit Profile</h1>

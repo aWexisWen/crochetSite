@@ -4,11 +4,27 @@ html {
 }
 
 body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
     overflow-x: hidden;
     max-width: 100%;
     margin: 0;
     margin-bottom: 150px;
     font-family: 'Andika';
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h1,
@@ -62,8 +78,7 @@ h6 {
     max-height: 200px;
 }
 
-CSS for navbar
-.navbar {
+CSS for navbar .navbar {
     transition: background-color 0.3s ease;
     display: flex;
     align-items: center;
@@ -72,31 +87,32 @@ CSS for navbar
 .navbar-brand {
     flex-grow: 1;
     text-align: center;
-  }
-  
-  Add this CSS to position the navigation items
-  .navbar-nav {
+}
+
+Add this CSS to position the navigation items .navbar-nav {
     flex-grow: 1;
     justify-content: flex-start;
-  }
-  
-  .navbar-nav .nav-item {
+}
+
+.navbar-nav .nav-item {
     margin-right: 10px;
-  }
-  
-  .navbar-nav.ml-auto {
+}
+
+.navbar-nav.ml-auto {
     justify-content: flex-end;
     margin-left: auto !important;
-  }
-  
-  .navbar-nav.ml-auto .nav-item:last-child {
-    margin-right: 0;
-  }
-  
-  .forum-title {
-    margin-top: 50px; /* Adjust the value as needed */
 }
-  /* CSS for navbar 
+
+.navbar-nav.ml-auto .nav-item:last-child {
+    margin-right: 0;
+}
+
+.forum-title {
+    margin-top: 50px;
+    /* Adjust the value as needed */
+}
+
+/* CSS for navbar 
   .navbar {
     position: relative;
     display: flex;

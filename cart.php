@@ -21,9 +21,10 @@ if (!isset($_SESSION['username'])) {
 </head>
 <style>
     body {
-        background-image: url(https://kaboompics.com/cache/c/3/e/f/b/c3efbe124cec51a3aa55963a4f32b7ce8f2a31c7.jpeg);
+        background: linear-gradient(45deg, #bdc3c7, #2c3e50);
     }
 </style>
+
 <body>
     <?php
     include 'includes/header_menu.php';

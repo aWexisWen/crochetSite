@@ -17,11 +17,10 @@ session_start();
 </head>
 <style>
     body {
-        background-image: url(https://kaboompics.com/cache/c/3/e/f/b/c3efbe124cec51a3aa55963a4f32b7ce8f2a31c7.jpeg);
+        background: linear-gradient(45deg, #bdc3c7, #2c3e50);
     }
-
-
 </style>
+
 <body style="margin-bottom:200px">
     <!--Header-->
     <?php
@@ -30,7 +29,7 @@ session_start();
     ?>
     <!--Header ends-->
     <div id="content">
-        <div id="bg" class="">
+        <div id="" class="">
             <div class="container" style="padding-top:150px">
                 <div class="mx-auto p-5 text-white" id="banner_content" style="border-radius: 0.5rem;">
                     <h1>We Sell All Things Crochet</h1>
@@ -39,7 +38,7 @@ session_start();
 
                 </div>
             </div>
-            
+
         </div>
     </div>
     <div class="text-center pt-4 h3">
@@ -49,22 +48,22 @@ session_start();
     <div class="container pt-3" style="align-content: center;">
         <div class="row text-center ">
             <div class="col-6 col-md-3 py-3">
-                <a href="products.php#watch"> <img src="https://lh4.googleusercontent.com/tGb35PI4Li9vTFZ2hR6rsDFVDLO62s_jKpge6afADfzLzE5ELikuKbGuCYWcVB3TWglS33ybN0CqqFR9UP2nCu-vbWUL34bN2363iVIvzKkyjvYcwXBKyK791ec1KaToXjH6ZbahpXCR1brKlQ" class="img-fluid " alt="" style="border-radius:0.5rem">
+                <a href="products.php#crochetgoods"> <img src="https://careerilluminate.com/wp-content/uploads/2020/02/knitting-1614283_1920-1024x683.jpg" class="img-fluid " alt="" style="border-radius:0.5rem">
                     <div class="h5 pt-3 font-weight-bolder">
                         Crochet Goods
                     </div>
                 </a>
             </div>
             <div class="col-6 col-md-3 py-3 ">
-                <a href="products.php#shirt">
+                <a href="products.php#crochetitems">
                     <img src="https://img.ehowcdn.com/375/cme-data/getty%2Fc05664dcd61f4e1b95ef997a8aa946a4.jpg" class="img-fluid zoom" alt="" style="border-radius:0.5rem">
                     <div class="h5 pt-3 font-weight-bolder">
-                        Crochet Materials
+                        Crochet Items
                     </div>
                 </a>
             </div>
             <div class="col-6 col-md-3 py-3">
-                <a href="products.php#shoes">
+                <a href="products.php#classes">
                     <img src="https://s3.amazonaws.com/coursesity-blog/2021/08/Crocheting_classes.png" class="img-fluid   " alt="" style="border-radius:0.5rem">
                     <div class="h5 pt-3 font-weight-bolder">
                         Crocheting Classes
