@@ -59,8 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background: linear-gradient(45deg, #bdc3c7, #2c3e50);
-        }
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 5s ease infinite;
+    }
 
         .product-image {
             height: 225px;

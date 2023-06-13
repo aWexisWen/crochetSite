@@ -57,7 +57,19 @@ $result = mysqli_query($con, $query) or die(mysqli_error($con));
 </head>
 <style>
     body {
-        background: linear-gradient(45deg, #bdc3c7, #2c3e50);
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 5s ease infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
 </style>
 
