@@ -53,7 +53,9 @@ session_start();
         <div class="col-md-5 mt-3">
           <span class="" style="color: brown;">
             <h1 class="title" style="color: brown;">LIVE SUPPORT</h1>
-            <h3 style="color: brown;">24 hours|7 days a week| 365 days a year Live Technical Support</h3>
+            <div style="background-color: #F5F5F5; padding: 10px;">
+              <h3 style="color: brown;">24 hours | 7 days a week | 365 days a year Live Technical Support</h3>
+            </div>
           </span>
           <hr>
           <p style="text-align: justify;">We understand the importance of providing timely assistance to our valued customers.
