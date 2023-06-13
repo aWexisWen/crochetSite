@@ -291,7 +291,7 @@ session_start();
                                 echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
                             } else {
                             ?>
-                                <p><a href="cart-add.php?id=7" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                                <p><a href="cart-add.php?id=11" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
                         <?php
                             }
                         }
@@ -313,7 +313,7 @@ session_start();
                                 echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
                             } else {
                             ?>
-                                <p><a href="cart-add.php?id=8" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                                <p><a href="cart-add.php?id=12" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
                         <?php
                             }
                         }
@@ -337,7 +337,7 @@ session_start();
                                 echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
                             } else {
                             ?>
-                                <p><a href="cart-add.php?id=9" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                                <p><a href="cart-add.php?id=13" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
                         <?php
                             }
                         }
@@ -359,7 +359,7 @@ session_start();
                                 echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
                             } else {
                             ?>
-                                <p><a href="cart-add.php?id=10" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                                <p><a href="cart-add.php?id=14" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
                         <?php
                             }
                         }
@@ -381,7 +381,7 @@ session_start();
                                 echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
                             } else {
                             ?>
-                                <p><a href="cart-add.php?id=11" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                                <p><a href="cart-add.php?id=15" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
                         <?php
                             }
                         }
@@ -403,7 +403,7 @@ session_start();
                                 echo '<p><a href="#" class="btn btn-warning  text-white" disabled>Added to cart</a></p>';
                             } else {
                             ?>
-                                </p><a href="cart-add.php?id=12" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
+                                </p><a href="cart-add.php?id=16" name="add" value="add" class="btn btn-warning  text-white">Add to cart</a></p>
                         <?php
                             }
                         }

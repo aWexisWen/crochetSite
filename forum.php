@@ -90,7 +90,7 @@ $result = mysqli_query($con, $query) or die(mysqli_error($con));
                 <div class="post-form">
                     <form method="POST" action="">
                         <div class="form-group">
-                            <label for="post_content">Write Content Here:</label>
+                            <label for="post_content">Write Your Thoughts Here:</label>
                             <textarea class="form-control" id="post_content" name="post_content" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Post</button>
