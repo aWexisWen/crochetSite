@@ -17,7 +17,7 @@ session_start();
 </head>
 <style>
     body {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background: linear-gradient(-45deg, #86E3CE, #D0E6A5, #FFDD94, #FA897B, #CCABD8);
         background-size: 400% 400%;
         animation: gradient 5s ease infinite;
         height: fit-content;
@@ -35,6 +35,9 @@ session_start();
         100% {
             background-position: 0% 50%;
         }
+    }
+    .product-image {
+        height: 150px;
     }
 </style>
 
@@ -55,7 +58,6 @@ session_start();
 
                 </div>
             </div>
-
         </div>
     </div>
     <div class="text-center pt-4 h3">
@@ -63,9 +65,9 @@ session_start();
     </div>
     <!--menu highlights start-->
     <div class="container pt-3" style="align-content: center;">
-        <div class="row text-center ">
+        <div class="row text-center">
             <div class="col-6 col-md-3 py-3">
-                <a href="products.php#crochetgoods"> <img src="https://careerilluminate.com/wp-content/uploads/2020/02/knitting-1614283_1920-1024x683.jpg" class="img-fluid " alt="" style="border-radius:0.5rem">
+                <a href="products.php#crochetgoods"> <img src="https://careerilluminate.com/wp-content/uploads/2020/02/knitting-1614283_1920-1024x683.jpg" class="img-fluid product-image" alt="" style="border-radius:0.5rem">
                     <div class="h5 pt-3 font-weight-bolder">
                         Crochet Goods
                     </div>
@@ -73,7 +75,7 @@ session_start();
             </div>
             <div class="col-6 col-md-3 py-3 ">
                 <a href="products.php#crochetitems">
-                    <img src="https://img.ehowcdn.com/375/cme-data/getty%2Fc05664dcd61f4e1b95ef997a8aa946a4.jpg" class="img-fluid zoom" alt="" style="border-radius:0.5rem">
+                    <img src="https://img.ehowcdn.com/375/cme-data/getty%2Fc05664dcd61f4e1b95ef997a8aa946a4.jpg" class="img-fluid zoom product-image" alt="" style="border-radius:0.5rem">
                     <div class="h5 pt-3 font-weight-bolder">
                         Crochet Items
                     </div>
@@ -81,7 +83,7 @@ session_start();
             </div>
             <div class="col-6 col-md-3 py-3">
                 <a href="products.php#classes">
-                    <img src="https://s3.amazonaws.com/coursesity-blog/2021/08/Crocheting_classes.png" class="img-fluid   " alt="" style="border-radius:0.5rem">
+                    <img src="https://s3.amazonaws.com/coursesity-blog/2021/08/Crocheting_classes.png" class="img-fluid product-image" alt="" style="border-radius:0.5rem">
                     <div class="h5 pt-3 font-weight-bolder">
                         Crocheting Classes
                     </div>

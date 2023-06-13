@@ -17,7 +17,7 @@ session_start();
 </head>
 <style>
     body {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background: linear-gradient(-45deg, #86E3CE, #D0E6A5, #FFDD94, #FA897B, #CCABD8);
         background-size: 400% 400%;
         animation: gradient 5s ease infinite;
         height: fit-content;
