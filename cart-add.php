@@ -8,4 +8,3 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     mysqli_query($con, $query) or die(mysqli_error($con));
     header('location: products.php');
 }
-?>   

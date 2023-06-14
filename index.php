@@ -36,6 +36,7 @@ session_start();
             background-position: 0% 50%;
         }
     }
+
     .product-image {
         height: 150px;
     }
@@ -51,7 +52,7 @@ session_start();
     <div id="content">
         <div id="" class="">
             <div class="container" style="padding-top:150px">
-                <div class="mx-auto p-5 text-white" id="banner_content" style="border-radius: 0.5rem;">
+                <div class="mx-auto p-4 text-white" id="banner_content" style="border-radius: 0.5rem;">
                     <h1>We Sell All Things Crochet</h1>
                     <p>Shop Till You Drop In Our Crochet Marketplace</p>
                     <a href="products.php" class="btn btn-warning btn-lg text-white">Shop Now</a>

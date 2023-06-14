@@ -62,13 +62,16 @@ $result = mysqli_query($con, $query) or die(mysqli_error($con));
         animation: gradient 5s ease infinite;
         height: fit-content;
     }
+
     @keyframes gradient {
         0% {
             background-position: 0% 50%;
         }
+
         50% {
             background-position: 100% 50%;
         }
+
         100% {
             background-position: 0% 50%;
         }

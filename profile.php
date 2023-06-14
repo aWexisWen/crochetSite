@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Execute the update statement
     if (mysqli_stmt_execute($statement)) {
         // Profile update successful
-        header("Location: profile.php");
+        header("Location: profile.php?profile_updated=true");
         exit();
     } else {
         // Profile update failed
@@ -68,6 +68,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .product-image {
             height: 225px;
         }
+
+        .success-notification {
+            background-color: #bbd4aa;
+            color: black;
+            padding: 10px;
+            width: 380px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -82,6 +90,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div id="content">
         <div id="" class="">
             <div class="container" style="padding-top:150px">
+                <div id="notification">
+                    <?php if (isset($_GET['profile_updated'])) : ?>
+                        <div class="success-notification" style="border-radius: 0.5rem;">
+                            Your account has been updated succesfully
+                        </div>
+                    <?php endif; ?>
+                </div>
                 <div class="mx-auto p-5 text-white" id="banner_content" style="border-radius: 0.5rem;">
                     <h1>Edit Profile</h1>
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">

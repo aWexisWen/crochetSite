@@ -1,5 +1,3 @@
-
-
 <!-- Navigation bar start -->
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark" style="background-color: rgba(0, 0, 0, 0.5)">
     <div class="container">
@@ -88,7 +86,7 @@
     </div>
 </div>
 <!--Login trigger Model ends-->
-    <!--Signup model start-->
+<!--Signup model start-->
 <div class="modal fade" id="signup">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content" style="background-color:rgba(255,255,255,0.95)">
@@ -103,7 +101,9 @@
                     <div class="form-group">
                         <label for="username">Username:</label>
                         <input type="username" class="form-control" name="username" placeholder="Enter username" required>
-                        <?php if(isset($_GET['error'])){ echo "<span class='text-danger'>".$_GET['error']."</span>" ;}  ?>
+                        <?php if (isset($_GET['error'])) {
+                            echo "<span class='text-danger'>" . $_GET['error'] . "</span>";
+                        }  ?>
                     </div>
                     <div class="form-group">
                         <label for="pwd">Password:</label>

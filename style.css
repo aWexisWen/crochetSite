@@ -112,6 +112,14 @@ Add this CSS to position the navigation items .navbar-nav {
     /* Adjust the value as needed */
 }
 
+
+.success-notification {
+    background-color: #bbd4aa;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
 /* CSS for navbar 
   .navbar {
     position: relative;
