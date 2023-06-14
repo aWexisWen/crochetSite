@@ -40,7 +40,7 @@ session_start();
         <!--jumbutron start-->
         <div class="jumbotron text-center">
             <h1>Welcome to Hooked</h1>
-            <p>We have a wide range of products for your needs of crochet from bags to toys. There are also crochet materials if you want to do it yourself</p>
+            <p>We have a wide range of products for your needs of crochet from bags to toys. There are also crochet materials if you want to try it yourself</p>
         </div>
         <!--jumbutron ends-->
         <!--breadcrumb start-->
