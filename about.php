@@ -66,7 +66,6 @@ session_start();
             Rest assured, we are committed to ensuring your satisfaction and making your journey with us as smooth as possible.
             Experience the convenience of our 24/7 live customer support and let us assist you every step of the way.
           </p>
-
         </div>
       </div>
     </div>
@@ -79,7 +78,6 @@ session_start();
         <label for="exampleFormControlInput1">Username</label>
         <input type="username" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Username" name="username">
       </div>
-
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Message</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="5"></textarea>
