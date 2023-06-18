@@ -25,30 +25,31 @@
                         <a href="forum.php" class="nav-link">Forum</a>
                     <?php } ?>
                 </li>
-                <li class="nav-item">
-                    <?php if (isset($_SESSION['username'])) { ?>
-                        <a href="cart.php" class="nav-link">Cart</a>
-                    <?php } ?>
-                </li>
                 <?php if (isset($_SESSION['username'])) { ?>
                     <?php if ($_SESSION['user_type'] == 'seller') { ?>
+                        <li class="nav-item">
+                            <a href="addproducts.php" class="nav-link">Add Products</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="seller_dashboard.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
                         </li>
                     <?php } else { ?>
                         <li class="nav-item">
+                            <a href="cart.php" class="nav-link">Cart</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="customer_dashboard.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
                         </li>
                     <?php } ?>
                     <li class="nav-item">
-                        <a href="logout_script.php" class="nav-link"><i class="fa fa-sign-out"></i> Logout</a>
+                        <a href="logout_script.php" class="nav-link"><i class="fa fa-sign-out"></i>Logout</a>
                     </li>
                 <?php } else { ?>
                     <li class="nav-item">
-                        <a href="#signup" class="nav-link" data-toggle="modal"><i class="fa fa-user"></i> Sign Up</a>
+                        <a href="#signup" class="nav-link" data-toggle="modal"><i class="fa fa-user"></i>Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#login" class="nav-link" data-toggle="modal"><i class="fa fa-sign-in"></i> Login</a>
+                        <a href="#login" class="nav-link" data-toggle="modal"><i class="fa fa-sign-in"></i>Login</a>
                     </li>
                 <?php } ?>
             </ul>
@@ -85,7 +86,7 @@
                 <a href="http://">forgot password ?</a>
             </div>
             <div class="modal-footer">
-                <p class="mr-auto">Don't have an account yet? <a href="#signup" data-toggle="modal" data-dismiss="modal">Sign up here</a></p>
+                <p class="mr-auto">Don't have an account yet?<a href="#signup" data-toggle="modal" data-dismiss="modal">Sign up here</a></p>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
