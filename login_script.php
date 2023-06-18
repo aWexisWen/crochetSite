@@ -9,7 +9,7 @@ $password = $_POST['lpassword'];
 $password = mysqli_real_escape_string($con, $password);
 $password = md5($password);
 
-$query = "SELECT id,username,password from users where username='" . $username . "' and  password='" . $password . "'";
+$query = "SELECT id, username, password, user_type FROM users WHERE username='" . $username . "' AND password='" . $password . "'";
 $result = mysqli_query($con, $query);
 $num = mysqli_num_rows($result);
 if ($num == 0) {
@@ -19,5 +19,6 @@ if ($num == 0) {
     $row = mysqli_fetch_array($result);
     $_SESSION['username'] = $row['username'];
     $_SESSION['user_id'] = $row['id'];
-    header('location:products.php');
+    $_SESSION['user_type'] = $row['user_type']; // Add this line to set the user_type session variable
+    header('location: products.php');
 }

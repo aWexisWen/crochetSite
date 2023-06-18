@@ -31,11 +31,17 @@
                     <?php } ?>
                 </li>
                 <?php if (isset($_SESSION['username'])) { ?>
+                    <?php if ($_SESSION['user_type'] == 'seller') { ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="seller_dashboard.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
+                        </li>
+                    <?php } else { ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customer_dashboard.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
+                        </li>
+                    <?php } ?>
                     <li class="nav-item">
                         <a href="logout_script.php" class="nav-link"><i class="fa fa-sign-out"></i> Logout</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashboard.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
                     </li>
                 <?php } else { ?>
                     <li class="nav-item">
@@ -114,14 +120,21 @@
                             <label for="validation1">First Name</label>
                             <input type="text" class="form-control" id="validation1" name="firstName" placeholder="First Name" required>
                         </div>
-                        <div class="form-group col-md -6">
+                        <div class="form-group col-md-6">
                             <label for="validation2">Last Name</label>
                             <input type="text" class="form-control" id="validation2" name="lastName" placeholder="Last Name">
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label for="user-type">Sign up as:</label>
+                        <select class="form-control" id="user-type" name="userType" required>
+                            <option value="customer">Customer</option>
+                            <option value="seller">Seller</option>
+                        </select>
+                    </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" required>
-                        <label for="checkbox" class="form-check-label">Agree terms and Condition</label>
+                        <label for="checkbox" class="form-check-label">Agree to terms and conditions</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block" name="Submit">Sign Up</button>
                 </form>
