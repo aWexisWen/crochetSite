@@ -26,7 +26,7 @@
                     <?php } ?>
                 </li>
                 <?php if (isset($_SESSION['username'])) { ?>
-                    <?php if ($_SESSION['user_type'] == 'seller') { ?>
+                    <?php if (isset($_SESSION['user_type']) && $_SESSION['user_type'] === 'seller') { ?>
                         <li class="nav-item">
                             <a href="addproducts.php" class="nav-link">Add Products</a>
                         </li>
@@ -57,7 +57,7 @@
     </div>
 </nav>
 <!-- Navigation bar end -->
-<!--Login trigger Modal-->
+<!--Login trigger Model-->
 <div class="modal fade" id="login">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content" style="background-color:rgba(255,255,255,0.95)">
