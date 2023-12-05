@@ -59,7 +59,7 @@ if (!isset($_SESSION['username'])) {
                             echo "<tr><td>" . "#" . $row["id"] . "</td><td>" . $row["Name"] . "</td><td>RM " . $row["Price"] . "</td><td><a href='cart-remove.php?id={$row['id']}' class='remove_item_link'> Remove</a></td></tr>";
                         }
                         $id = rtrim($id, ", ");
-                        echo "<tr><td></td><td>Total</td><td>RM " . $sum . "</td><td><a href='success.php' class='btn btn-primary'>Confirm Order</a></td></tr>";
+                        echo "<tr><td></td><td>Total</td><td>RM " . $sum . "</td><td><a href='checkout.php' class='btn btn-primary'>Checkout</a></td></tr>";
                         ?>
                     </tbody>
                 <?php

@@ -68,7 +68,8 @@ session_start();
     <div class="container pt-3" style="align-content: center;">
         <div class="row text-center">
             <div class="col-6 col-md-3 py-3">
-                <a href="products.php#crochetgoods"> <img src="https://careerilluminate.com/wp-content/uploads/2020/02/knitting-1614283_1920-1024x683.jpg" class="img-fluid product-image" alt="" style="border-radius:0.5rem">
+                <a href="products.php#crochetgoods">
+                    <img src="https://careerilluminate.com/wp-content/uploads/2020/02/knitting-1614283_1920-1024x683.jpg" class="img-fluid product-image" alt="" style="border-radius:0.5rem">
                     <div class="h5 pt-3 font-weight-bolder">
                         Crochet Goods
                     </div>
