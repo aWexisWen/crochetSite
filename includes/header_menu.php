@@ -17,6 +17,10 @@
                         <a href="products.php#crochetgoods" class="dropdown-item">Crochet Goods</a>
                         <a href="products.php#crochetitems" class="dropdown-item">Crochet Items</a>
                         <a href="products.php#classes" class="dropdown-item">Crocheting Classes</a>
+                        <!-- Add Products option for sellers -->
+                        <?php if (isset($_SESSION['username']) && isset($_SESSION['user_type']) && $_SESSION['user_type'] === 'seller') { ?>
+                            <a href="addproducts.php" class="dropdown-item">Add Products</a>
+                        <?php } ?>
                     </div>
                 </li>
                 <li class="nav-item"><a href="about.php" class="nav-link">About Us</a></li>
@@ -135,7 +139,7 @@
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" required>
-                        <label for="checkbox" class="form-check-label">Agree to terms and conditions</label>
+                        <label for="checkbox" class="form-check-label">I agree to terms and conditions</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block" name="Submit">Sign Up</button>
                 </form>
