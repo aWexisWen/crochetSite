@@ -18,29 +18,30 @@
                         <a href="products.php#crochetitems" class="dropdown-item">Crochet Items</a>
                         <a href="products.php#classes" class="dropdown-item">Crocheting Classes</a>
                         <!-- Add Products option for sellers -->
-                        <?php if (isset($_SESSION['username']) && isset($_SESSION['user_type']) && $_SESSION['user_type'] === 'seller') { ?>
-                            <a href="addproducts.php" class="dropdown-item">Add Products</a>
+                        <?php 
+                        session_start(); // Start the session at the beginning of the file if not started
+                        if (isset($_SESSION['username']) && isset($_SESSION['user_type']) && $_SESSION['user_type'] === 'seller') { ?>
+                            <a href="addprd.php" class="dropdown-item">Add Products</a>
                         <?php } ?>
                     </div>
                 </li>
                 <li class="nav-item"><a href="about.php" class="nav-link">About Us</a></li>
                 <li class="nav-item">
                     <?php if (isset($_SESSION['username'])) { ?>
-                        <a href="forum.php" class="nav-link">Forum</a>
+                        <?php if ($_SESSION['user_type'] === 'customer') { ?>
+                            <a href="cart.php" class="nav-link">Cart</a>
+                        <?php } ?>
                     <?php } ?>
                 </li>
                 <?php if (isset($_SESSION['username'])) { ?>
                     <?php if (isset($_SESSION['user_type']) && $_SESSION['user_type'] === 'seller') { ?>
                         <li class="nav-item">
-                            <a href="addproducts.php" class="nav-link">Add Products</a>
+                            <a href="addprd.php" class="nav-link">Add Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="seller_dashboard.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
                         </li>
                     <?php } else { ?>
-                        <li class="nav-item">
-                            <a href="cart.php" class="nav-link">Cart</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="customer_dashboard.php" data-placement="bottom" data-toggle="popover" data-trigger="hover" data-content="<?php echo $_SESSION['username'] ?>"><i class="fa fa-user-circle"></i></a>
                         </li>

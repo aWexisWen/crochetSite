@@ -74,7 +74,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         textarea {
-            resize: none; /* Prevents resizing */
+            resize: none;
+            /* Prevents resizing */
         }
     </style>
 </head>
@@ -123,8 +124,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
     <!-- Footer -->
-    <?php include('includes/footer.php'); // Include your footer file ?>
-    
+    <?php include('includes/footer.php'); // Include your footer file 
+    ?>
+
     <!-- JavaScript and Bootstrap JS libraries -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

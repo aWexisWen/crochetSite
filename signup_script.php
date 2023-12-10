@@ -33,10 +33,13 @@ if ($num != 0) {
     $_SESSION['user_id'] = $user_id;
 
     if ($userType == 'customer') {
+        $_SESSION['user_type'] = 'customer'; // Set the user type to 'customer'
         header('location: products.php');
     } elseif ($userType == 'seller') {
+        $_SESSION['user_type'] = 'seller'; // Set the user type to 'seller'
         header('location: seller_dashboard.php');
     } elseif ($userType == 'admin') {
+        $_SESSION['user_type'] = 'admin'; // Set the user type to 'admin'
         header('location: admin_dashboard.php');
     }
 }
